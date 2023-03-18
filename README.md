@@ -3,6 +3,9 @@
 ### Overview
 Hola y buenos!
 
+### Quick demo
+![Demo](https://github.com/aderiushev/rakutentv-prueba/blob/main/examples/demo.gif)
+
 ### Requirements
 - node v16.17.0
 - yarn 1.22.19
@@ -10,7 +13,7 @@ Hola y buenos!
 ### Setup
 1. in order to make the rakuten api work we need to set up the local domain to avoid the CORS.
 So what you need to do is basically add the **127.0.0.1 dev.rakuten.tv** line to you **/etc/hosts** (assuming you run mac)
-2. clone the app with `git clone https://...`
+2. clone the app with `git clone git@github.com:aderiushev/rakutentv-prueba.git`
 3. install packages with `yarn`
 
 ### Run app
