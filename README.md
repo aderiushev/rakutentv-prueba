@@ -2,6 +2,15 @@
 
 ### Overview
 Hola y buenos!
+Muchos gracias para oportunidad :)
+
+Here is the demo application of the 2-screens rakuten-tv demo app
+- categories screen with the list of movies
+- movie details page with the quick description
+- trailer modal window
+
+Any feedback appreciated!
+Thanks :)
 
 ### Quick demo
 ![Demo](https://github.com/aderiushev/rakutentv-prueba/blob/main/examples/demo.gif)
@@ -25,9 +34,6 @@ So what you need to do is basically add the **127.0.0.1 dev.rakuten.tv** line to
 
 ### Build the production-ready bundle
 - `yarn build`
-
-### Demo
-123
 
 ### Made with
 - React
