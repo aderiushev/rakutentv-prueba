@@ -1,0 +1,22 @@
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+
+  .Card {
+    display: flex;
+
+    &Bottom {
+      margin-top: 10px;
+    }
+
+    &Actions {
+      margin-top: 10px;
+    }
+  }
+
+  .Placeholder {
+    width: 100%;
+  }
+}

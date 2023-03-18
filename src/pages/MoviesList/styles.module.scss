@@ -1,0 +1,20 @@
+.Category + .Category {
+  margin-top: 40px;
+}
+
+.Category {
+  &Top {
+    padding: 0 10px;
+  }
+
+  .Gallery {
+    margin-top: 10px;
+  }
+
+  .PlaceholderHeader {
+    font-size: 40px;
+  }
+
+  .PlaceholderMovies {
+  }
+}
