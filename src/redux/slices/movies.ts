@@ -19,6 +19,14 @@ const movieSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
+      .addCase(fetchCategoryById.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
+      .addCase(fetchCategories.pending, (state) => {
+        state.loading = true
+        state.error = null
+      })
       .addCase(fetchCategoryById.fulfilled, (state, action) => {
         state.loading = false
         movieAdapter.upsertMany(state, action.payload.movies)
@@ -26,6 +34,14 @@ const movieSlice = createSlice({
       .addCase(fetchCategories.fulfilled, (state, action) => {
         state.loading = false
         movieAdapter.upsertMany(state, action.payload.movies)
+      })
+      .addCase(fetchCategoryById.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.error.message || 'Something went wrong.'
+      })
+      .addCase(fetchCategories.rejected, (state, action) => {
+        state.loading = false
+        state.error = action.error.message || 'Something went wrong.'
       })
   },
 })
