@@ -44,7 +44,7 @@ export const MoviesListPure = () => {
   )
 
   const sortedCategories = useMemo(() => {
-    return _.orderBy(categories, ['id'], ['ASC'])
+    return _.orderBy(categories, ['id'], ['asc'])
   }, [categories])
 
   const isCategoriesLoaded = isCategoriesLoading === false
